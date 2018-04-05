@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'ArcaMaj';
+    src: url("../statics/font/ArcaMajora3-Bold.otf");
+}
+
+body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    color: gray;
+    text-align: justify;
+}
+
+body a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: gray;
+}
+
+body h1{
+  font-family: 'ArcaMaj', sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+body h2{
+  font-family: 'ArcaMaj', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+body h3{
+  font-family: 'ArcaMaj', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 110%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+header{
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
+img#logo {
+    width: 85%;
+    min width: 120px;
+    max-width: 220px;
+    margin: 20px;
+}
+
+img#botao-menu {
+    width: 40px;
+    margin: 40px;
+}
+
+#myCanvas {
+    width: 1000px;
+    height: 800px;
+    float: right;
+}
+
+.p-content {
+    width: 350px;
+    float: right;
+    padding-top: 20px;
+}
+
+
+
+.conteudo-menu h1{
+  font-family:'ArcaMaj';
+  font-size: 67px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.conteudo-menu h1:hover {
+  font-family:'ArcaMaj';
+  font-size: 67px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.conteudo-menu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    width: 570px;
+    right: 225px;
+    top: 150px;
+}
+
+.quot {
+    font-size: 22px;
+    text-align: left;
+}
+
+::-webkit-input-placeholder {
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 2px;
+   color: #BDBDBD;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: red;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;
+}
+
+:-ms-input-placeholder {
+   color: red;
+}
+
+@media screen and (min-width: 600px){
+ /* QUEM SOMOS START*/
+  #quem-somos{
+    display: none
+  }
+  #quem-somos {
+      background: white;
+      position: absolute;
+      top: 20%;
+      height: 80%;
+      width: 100%;
+      padding: 8% 10%;
+  }
+  #quem-somos>div {
+      padding: 0 45px;
+  }
+  #quem-somos>div:last-child {
+      padding-top: 45px;
+  }
+  #quem-somos ul {
+    width: auto;
+  }
+  #quem-somos ul li {
+      list-style: none;
+      text-align: center;
+  }
+  #quem-somos h1{
+    color: #00d600;
+    font: 95px;
+  }
+  #quem-somos h2{
+    font-family: 'ArcaMaj', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #00d600;
+  }
+  #quem-somos h3{
+    font-family: 'ArcaMaj', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* QUEM SOMOS FIM */
+  /* SERVIÇOS START */
+  #servicos{
+    display: none
+    }
+  #servicos {
+      background: white;
+      position: absolute;
+      top: 20%;
+      height: 80%;
+      padding: 8% 10%;
+  }
+  #servicos h1:first-child {
+      letter-spacing: 7px;
+      margin-bottom: -17px;
+  }
+  #servicos p{
+    width: auto;
+  }
+
+  #servicos>div {
+      padding: 0 45px;
+  }
+  #servicos h1{
+    color: #ff9700;
+    font-size: 100px
+  }
+
+    /* SERVIÇOS END */
+    /* CONTATO START */
+  #contato{
+    display: none
+  }
+  #contato {
+      width: 100%;
+      background: white;
+      position: absolute;
+      top: 20%;
+      height: 80%;
+      padding: 8% 10%;
+      margin: 0;
+  }
+
+  #contato>div {
+      padding: 0 45px;
+  }
+
+  #contato p {
+      width: 400px;
+      text-align: center;
+      line-height: 35px;
+      font-size: 19px;
+      margin: 40px 0;
+  }
+
+  #contato h1 {
+      color: #009ff2;
+      letter-spacing: 7px;
+      line-height: 90px;
+      margin-bottom: 50px;
+  }
+
+  #contato h1:first-child {
+      letter-spacing: 0;
+      margin-bottom: 0;
+  }
+
+
+  form {
+    float: right;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
+  input {
+    border: 1px solid #009ff2;
+    width: 170px;
+    height: 35px;
+    padding-left: 10px;
+    box-shadow: 6px 7px 20px #d2d2d2d2;
+  }
+  input[type="email"] {
+    width: 100%;
+    margin: 8px 0;
+  }
+  textarea {
+    border: 1px solid #009ff2;
+    width: 100%;
+    padding-left: 10px;
+    box-shadow: 6px 7px 20px #d2d2d2d2;
+  }
+
+  button.btn.btn-primary {
+    border-radius: 20px;
+    height: 32px;
+    width: 100px;
+    border: 1px solid #009ff2;
+    color: #009ff2;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 20px;
+    padding: 0;
+}
+
+}
+
+  /* SERVIÇOS FIM */
+
+@media screen and (max-width: 600px){
+    video{
+      display: none;
+    }
+}
