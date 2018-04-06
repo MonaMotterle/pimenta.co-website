@@ -23,7 +23,7 @@
 
 <body>
   <div class="conteiner">
-    <canvas id="myCanvas" width="500" height="500">Your browser does not support the HTML5 canvas tag.</canvas>
+    <!-- <canvas id="myCanvas" width="500" height="500">Your browser does not support the HTML5 canvas tag.</canvas> -->
     <header class="row d-flex justify-content-center">
       <div class="clearfix col-12 col-md-8">
         <span class="logo float-left"><a href="index.html"><img class="img-responsive" id="logo" src="../statics/img/pimenta-logo.png" /></a></span>
@@ -169,41 +169,41 @@ $(document).ready(function(){
 });
 
 
-// MENU COM CANVAS
-$(document).ready(function(){
-  $("#botao-menu").click(function(){
-    var canvas = document.getElementById('myCanvas');
-    var ctx = canvas.getContext('2d');
-    var cx = 500;
-    var cy = 0;
-    var cr = 5;
-    var big = 1;
-
-    setInterval(function () {
-
-        grow();
-
-        draw();
-
-    }, 3);
-
-function grow() {
-    if (cr<=500){
-      cr += big
-    }
-}
-
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.arc(cx, cy, cr, 0, Math.PI * 2);
-    ctx.fillStyle = "#ff9700";
-    ctx.fill();
-    ctx.closePath();
-}
-
-  });
-});
+// // MENU COM CANVAS
+// $(document).ready(function(){
+//   $("#botao-menu").click(function(){
+//     var canvas = document.getElementById('myCanvas');
+//     var ctx = canvas.getContext('2d');
+//     var cx = 400;
+//     var cy = 0;
+//     var cr = 5;
+//     var big = 1;
+//
+//     setInterval(function () {
+//
+//         grow();
+//
+//         draw();
+//
+//     }, 3);
+//
+// function grow() {
+//     if (cr<=500){
+//       cr += big
+//     }
+// }
+//
+// function draw() {
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     ctx.beginPath();
+//     ctx.arc(cx, cy, cr, 0, Math.PI * 2);
+//     ctx.fillStyle = "#ff9700";
+//     ctx.fill();
+//     ctx.closePath();
+// }
+//
+//   });
+// });
 
 </script>
 </body>

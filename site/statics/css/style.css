@@ -76,7 +76,6 @@ img#botao-menu {
 }
 
 
-
 .conteudo-menu h1{
   font-family:'ArcaMaj';
   font-size: 67px;
@@ -91,16 +90,16 @@ img#botao-menu {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .conteudo-menu {
-    display: none;
+    display: block;
     position: absolute;
-    background-color: transparent;
+    background-color: #ff9700;
     width: 570px;
     right: 225px;
     top: 150px;
+
 }
 
 .quot {
@@ -127,6 +126,12 @@ img#botao-menu {
 :-ms-input-placeholder {
    color: red;
 }
+
+.cases>div img {
+  padding: 0
+
+}
+
 
 @media screen and (min-width: 600px){
  /* QUEM SOMOS START*/
