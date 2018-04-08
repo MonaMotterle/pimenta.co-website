@@ -76,12 +76,14 @@ img#botao-menu {
 }
 
 
-.conteudo-menu h1{
-  font-family:'ArcaMaj';
-  font-size: 67px;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
+.conteudo-menu h1 {
+    font-family: 'ArcaMaj';
+    font-size: 67px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-bottom: 15px;
 }
 
 .conteudo-menu h1:hover {
@@ -90,16 +92,6 @@ img#botao-menu {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-.conteudo-menu {
-    display: block;
-    position: absolute;
-    background-color: #ff9700;
-    width: 570px;
-    right: 225px;
-    top: 150px;
-
 }
 
 .quot {
@@ -129,15 +121,51 @@ img#botao-menu {
 
 .cases>div img {
   padding: 0
+}
 
+.cases {
+  margin: 0 15%;
+}
+
+.case-page{
+  background-color: black;
+}
+
+.case-page header{
+  display: block;
+  position: relative;
+  background-color: black;
+  color: #00d600;
+  text-align: center;
+}
+
+.case-line {
+    height: 20vh;
+    width: 100vw;
 }
 
 
+
 @media screen and (min-width: 600px){
- /* QUEM SOMOS START*/
-  #quem-somos{
-    display: none
+
+  #menu {
+      display: block;
+      position: absolute;
+      background-color: #ff9700;
+      height: 2000px;
+      right: -15px;
+      top: 0px;
+      padding-top: 150px;
   }
+
+
+ /* QUEM SOMOS START*/
+
+   #quem-somos {
+     display: none;
+   }
+
+
   #quem-somos {
       background: white;
       position: absolute;

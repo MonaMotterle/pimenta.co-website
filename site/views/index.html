@@ -29,8 +29,8 @@
         <span class="logo float-left"><a href="index.html"><img class="img-responsive" id="logo" src="../statics/img/pimenta-logo.png" /></a></span>
         <span class="menu float-right"><img id="botao-menu" class="img-responsive" src="../statics/img/menu-orange.png"  /></span>
       </div>
-      <div id="menu" class="conteudo-menu">
-        <div class="row justify-content-sm-around">
+      <div id="menu" class="col-sm-6 col-12 conteudo-menu">
+        <div class="row">
           <h1 id="menu-quem-somos"class="col-12">quem somos</h1>
           <h1 id="menu-servicos"class="col-12">serviços</h1>
           <h1 id="menu-contato"class="col-12">contato</h1>
@@ -50,7 +50,7 @@
   </div>
   <!-- HOME END-->
   <!-- QUEM SOMOS START-->
-  <div id="quem-somos" class="row">
+  <div id="quem-somos" class="slide slideUp row">
     <div class="col-12 col-sm-6 text-right">
       <h1>Quem é a Pimenta?</h1>
       <div class="p-content">
@@ -153,8 +153,8 @@
 <script>
 
 $(document).ready(function(){
-  $("#menu-quem-somos").click(function(){
-      $("#quem-somos").slideToggle()("slow");
+  $("#menu-quem-somos").on('click', function(){
+      $("#quem-somos").slideToggle();
     });
 });
 $(document).ready(function(){
