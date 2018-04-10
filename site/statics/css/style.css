@@ -3,7 +3,6 @@
     src: url("../font/ArcaMajora3-Bold.otf");
 }
 
-
 body p {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -36,6 +35,9 @@ body h3{
   font-weight: bold;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
 
 #myVideo{
     position: absolute;
@@ -63,7 +65,7 @@ img#logo {
 
 img#botao-menu {
     width: 40px;
-    margin: 40px;
+    margin: 35px;
     cursor: pointer;
 }
 
@@ -86,7 +88,7 @@ button#close-menu {
     float: right;
 } */
 
-.conteudo-menu h1 {
+.cont-li {
     font-family: 'ArcaMaj';
     font-size: 67px;
     color: white;
@@ -94,11 +96,12 @@ button#close-menu {
     cursor: pointer;
     padding-left: 50px;
     padding-bottom: 15px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
+
 .quot {
     font-size: 22px;
-    text-align: left;
+    text-align: justify;
 }
 
 ::-webkit-input-placeholder {
@@ -138,7 +141,7 @@ text-align: center;
 }
 
 .cases {
-    margin: 0 !important;
+  margin:0!important;
   }
 
 .cases div{
@@ -174,7 +177,6 @@ text-align: center;
       padding-top: 150px;
       width: 0vw;
       text-align: left;
-
   }
 
  /* QUEM SOMOS START*/
@@ -291,7 +293,7 @@ text-align: center;
   }
   p.quot {
     float: right;
-    width: 75%;
+    width: 75% !important;
 }
 
   #contato h1 {
@@ -343,17 +345,139 @@ text-align: center;
     padding: 0;
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 750px){
 body{
   overflow: hidden;
 }
+#botao-menu{
+  float:right
+}
+#logo {
+  float: left;
+}
 }
 
-@media screen and (max-width: 900px){
-    .video{
+@media screen and (max-width: 750px){
+  body {
+    height: 100vh
+  }
+
+  body h1 {
+    padding: 0px 0 20px;
+    font-size: 60px !important;
+    text-align: center;
+  }
+
+  input {
+    width: 75vw !important;
+    padding: 10px !important;
+    margin: 10px 3px 10px 10px !important;
+    height: 6vh;
+  }
+
+  textarea {
+    width: 75vw !important;
+    padding: 10px !important;
+    margin: 10px 3px 10px 10px !important;
+    height: 10vh;
+  }
+
+  #quem-somos h1 {
+    padding: 35px 0 20px;
+  }
+
+  #quem-somos p {
+    width: 85%;
+    float: none;
+    margin: 10px 10px 30px 15px;
+    font-size: 20px;
+  }
+
+  #servicos h1:first-child{
+    padding: 35px 0 0;
+  }
+
+  #servicos p:first-child {
+    float: none;
+    text-align: justify;
+    margin: 10px 20px 30px 20px !important;
+    font-size: 20px;
+    width: 75vw;
+    padding-right: 30px;
+  }
+
+  #contato h1:first-child{
+    padding: 35px 0 0;
+  }
+
+  #contato p {
+    width: 300px;
+  }
+
+  #contato h1 {
+    line-height: 75px;
+    margin-bottom: 0;
+  }
+
+  iframe {
+    width: 75vw;
+    height: 25vh;
+  }
+
+  p.quot {
+      padding-bottom: 15px;
+      font-size: 22px;
+      text-align: justify;
+      width: 75vw !important;
+      float: left !important;
+  }
+
+  p {
+    float: left;
+    text-align: justify;
+    padding: 0
+  }
+  .cont-li {
+      display: block;
+      padding-left: 15px;
+      font-size: 45px;
+      left: 0;
+      text-align: center;
+  }
+
+  .video{
       display: none;
+  }
+
+  #quem-somos {
+    display: block;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding: 25px 0 0;
+    margin: 0;
+    left: 100%;
     }
-    #quem-somos {
-      top: 30%;
-    }
+  #servicos {
+    display: block;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding: 25px 0 0;
+    margin: 0;
+    left: 100%;
+  }
+  #contato {
+    display: block;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding: 25px 0 0;
+    margin: 0;
+    left: 100%;
+  }
+  #cases-head{
+    padding: 0
+  }
+
 }

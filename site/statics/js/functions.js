@@ -1,45 +1,54 @@
 $(document).ready(function(){
   $("#menu-quem-somos").click(function(){
       $("#menu").css('width', '0');
-      $("#close-menu").css('display', 'none');
-      $("#quem-somos").animate({top:'20%'});
+      $("#close-menu, .cont-li").css('display', 'none');
+      if ($(window).width() >= 750) {
+        $("#quem-somos").animate({top:'20%'});
+      }else{
+        $("#quem-somos").animate({left:'0'});
+      }
     });
 });
 
 $(document).ready(function(){
   $("#menu-servicos").click(function(){
       $("#menu").css('width', '0');
-      $("#close-menu").css('display', 'none');
-      $("#servicos").animate({top:'20%'});
+      $("#close-menu, .cont-li").css('display', 'none');
+      if ($(window).width() >= 750) {
+        $("#servicos").animate({top:'20%'});
+      }else{
+        $("#servicos").animate({left:'0'});
+      }
     });
 });
 
 $(document).ready(function(){
   $("#menu-contato").click(function(){
       $("#menu").css('width', '0');
-      $("#close-menu").css('display', 'none');
-      $("#contato").animate({top:'20%'});
+      $("#close-menu, .cont-li").css('display', 'none');
+      if ($(window).width() >= 750) {
+        $("#contato").animate({top:'20%'});
+      }else{
+        $("#contato").animate({left:'0'});
+      }
     });
 });
+
 $(document).ready(function(){
   $("#botao-menu").click(function(){
-  if ($(window).width() >= 900) {
-      $("#contato").css({'top':'100%'});
-      $("#servicos").css({'top':'100%'});
-      $("#quem-somos").css({'top':'100%'});
-      $("#menu").css('width', '50vw');}
+  if ($(window).width() >= 750) {
+      $("#quem-somos, #servicos, #contato").css({top:'100%'});
+      $("#menu").css({width:'50vw'});}
   else {
-    $("#menu").css('width', '100vw')
-              .css('height', '100vh');
-
-  }
-      $("#close-menu").css('display', 'block');
+      $("#quem-somos, #servicos, #contato").css({left:'100%'});
+      $("#menu").css({width:'100vw', height:'100vh', left:'0'});}
+    $("#close-menu, .cont-li").css('display', 'block');
     });
 });
 $(document).ready(function(){
   $("#close-menu").click(function(){
       $("#menu").css('width', '0');
-      $("#close-menu").css('display', 'none');
+      $("#close-menu, .cont-li").css('display', 'none');
     });
 });
 
