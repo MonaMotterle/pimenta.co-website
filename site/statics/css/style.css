@@ -357,6 +357,82 @@ body{
 }
 }
 
+@media screen and (min-width: 750px), screen and (max-width: 1000px){
+  .video{
+      display: none;
+  }
+
+  body h1 {
+    padding: 0 !important;
+    font-size: 60px !important;
+    text-align: center;
+  }
+  p.quot {
+    padding-bottom: 15px;
+    font-size: 22px;
+    text-align: justify;
+    float: right !important;
+  }
+
+  form{
+    float: none !important;
+  }
+
+  input, textarea {
+    width: 67vw !important;
+    padding: 10px !important;
+    margin: 10px 3px 10px 10px !important;
+    height: 6vh;
+  }
+
+  textarea{
+    height: 12vh;
+  }
+
+
+  #quem-somos p {
+    width: 100%;
+    float: none;
+    margin: 0px 0px 20px -15px;
+    font-size: 20px;
+  }
+
+  #servicos h1:first-child{
+    float: left;
+  }
+  #servicos h1{
+    letter-spacing: normal;
+  }
+
+  #servicos p:first-child {
+      text-align: justify;
+      font-size: 20px;
+      width: 75vw;
+  }
+
+  #contato h1 {
+    margin: 0;
+    padding: 0 !important;
+    letter-spacing: normal;
+}
+
+  #contato h1:first-child{
+    float: left;
+  }
+
+  #contato p {
+    margin: 0 !important;
+    padding: 0 0 10px;
+    line-height: normal;
+  }
+
+  iframe {
+    width: 68vw;
+    height: 20vh;
+}
+
+}
+
 @media screen and (max-width: 750px){
   body {
     height: 100vh
@@ -392,6 +468,15 @@ body{
     margin: 10px 10px 30px 15px;
     font-size: 20px;
   }
+  #quem-somos {
+    display: block;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding: 25px 0 0;
+    margin: 0;
+    left: 100%;
+    }
 
   #servicos h1:first-child{
     padding: 35px 0 0;
@@ -449,15 +534,7 @@ body{
       display: none;
   }
 
-  #quem-somos {
-    display: block;
-    position: absolute;
-    top: 10%;
-    text-align: center;
-    padding: 25px 0 0;
-    margin: 0;
-    left: 100%;
-    }
+
   #servicos {
     display: block;
     position: absolute;
