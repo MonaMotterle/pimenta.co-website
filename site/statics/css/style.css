@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'ArcaMaj';
-    src: url("../statics/font/ArcaMajora3-Bold.otf");
+    src: url("../font/ArcaMajora3-Bold.otf");
 }
+
 
 body p {
     font-family: 'Roboto', sans-serif;
@@ -35,13 +36,15 @@ body h3{
   font-weight: bold;
 }
 
-.video{
-    position: fixed;
+
+#myVideo{
+    position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 110%;
+    min-width: 100%;
     min-height: 100%;
     z-index: -1;
+    margin: 0;
 }
 
 header{
@@ -61,20 +64,27 @@ img#logo {
 img#botao-menu {
     width: 40px;
     margin: 40px;
+    cursor: pointer;
 }
 
-#myCanvas {
+button#close-menu {
+    top: 0;
+    right: 5%;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'ArcaMaj';
+    position: absolute;
+    display: none;
+}
+
+/* #myCanvas {
     width: 1000px;
     height: 800px;
     float: right;
-}
-
-.p-content {
-    width: 350px;
-    float: right;
-    padding-top: 20px;
-}
-
+} */
 
 .conteudo-menu h1 {
     font-family: 'ArcaMaj';
@@ -84,16 +94,8 @@ img#botao-menu {
     cursor: pointer;
     padding-left: 50px;
     padding-bottom: 15px;
+    text-decoration: none !important;
 }
-
-.conteudo-menu h1:hover {
-  font-family:'ArcaMaj';
-  font-size: 67px;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
 .quot {
     font-size: 22px;
     text-align: left;
@@ -119,60 +121,74 @@ img#botao-menu {
    color: red;
 }
 
-.cases>div img {
-  padding: 0
-}
-
-.cases {
-  margin: 0 15%;
-}
-
-.case-page{
-  background-color: black;
+#cases-title {
+    color: #00d600;
+    font-size: 70px;
+    height: 7vh;
+    text-align: center;
+    z-index: -1;
 }
 
 .case-page header{
-  display: block;
-  position: relative;
-  background-color: black;
-  color: #00d600;
-  text-align: center;
+display: block;
+position: relative;
+background-color: black;
+color: white;
+text-align: center;
 }
 
-.case-line {
-    height: 20vh;
-    width: 100vw;
+.cases {
+    margin: 0 !important;
+  }
+
+.cases div{
+  width: 100vw;
+}
+
+.cases>div a {
+  padding: 0;
+  margin: 0;
+}
+
+.cases>div img {
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+    cursor: pointer;
+}
+
+.cases>div img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    cursor: pointer;
 }
 
 
-
-@media screen and (min-width: 600px){
 
   #menu {
       display: block;
       position: absolute;
       background-color: #ff9700;
-      height: 2000px;
+      height: 100vh;
       right: -15px;
       top: 0px;
       padding-top: 150px;
-  }
+      width: 0vw;
+      text-align: left;
 
+  }
 
  /* QUEM SOMOS START*/
 
-   #quem-somos {
-     display: none;
-   }
-
-
   #quem-somos {
+      display: block;
+      margin: 0;
       background: white;
       position: absolute;
-      top: 20%;
-      height: 80%;
+      top: 100%;
+      bottom: 0;
+      height: 100%;
       width: 100%;
-      padding: 8% 10%;
+      padding: 5% 10%;
   }
   #quem-somos>div {
       padding: 0 45px;
@@ -180,9 +196,17 @@ img#botao-menu {
   #quem-somos>div:last-child {
       padding-top: 45px;
   }
+
+  #quem-somos p {
+      width: 75%;
+      float: right;
+      margin-right: 10%;
+  }
+
   #quem-somos ul {
     width: auto;
   }
+
   #quem-somos ul li {
       list-style: none;
       text-align: center;
@@ -204,20 +228,29 @@ img#botao-menu {
   }
   /* QUEM SOMOS FIM */
   /* SERVIÇOS START */
-  #servicos{
-    display: none
-    }
+
   #servicos {
+      display: block;
+      margin: 0;
       background: white;
       position: absolute;
-      top: 20%;
-      height: 80%;
-      padding: 8% 10%;
+      top: 100%;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      padding: 5% 10%;
   }
+
   #servicos h1:first-child {
       letter-spacing: 7px;
       margin-bottom: -17px;
   }
+
+  #servicos p:first-child {
+    width: 69%;
+    float: right;
+}
+
   #servicos p{
     width: auto;
   }
@@ -232,18 +265,18 @@ img#botao-menu {
 
     /* SERVIÇOS END */
     /* CONTATO START */
-  #contato{
-    display: none
-  }
   #contato {
-      width: 100%;
+      display: block;
+      margin: 0;
       background: white;
       position: absolute;
-      top: 20%;
-      height: 80%;
-      padding: 8% 10%;
-      margin: 0;
+      top: 100%;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      padding: 5% 10%;
   }
+
 
   #contato>div {
       padding: 0 45px;
@@ -256,6 +289,10 @@ img#botao-menu {
       font-size: 19px;
       margin: 40px 0;
   }
+  p.quot {
+    float: right;
+    width: 75%;
+}
 
   #contato h1 {
       color: #009ff2;
@@ -268,7 +305,6 @@ img#botao-menu {
       letter-spacing: 0;
       margin-bottom: 0;
   }
-
 
   form {
     float: right;
@@ -307,12 +343,17 @@ img#botao-menu {
     padding: 0;
 }
 
+@media screen and (min-width: 900px){
+body{
+  overflow: hidden;
+}
 }
 
-  /* SERVIÇOS FIM */
-
-@media screen and (max-width: 600px){
-    video{
+@media screen and (max-width: 900px){
+    .video{
       display: none;
+    }
+    #quem-somos {
+      top: 30%;
     }
 }

@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="../statics/css/style.css">
   <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.min.css">
   <!-- JAVASCRIPT -->
-
+  <!-- <link type="text/js" href="../statics/js/functions.css"> -->
 
 
   <title>Pimenta.co</title>
@@ -24,117 +24,131 @@
 <body>
   <div class="conteiner">
     <!-- <canvas id="myCanvas" width="500" height="500">Your browser does not support the HTML5 canvas tag.</canvas> -->
-    <header class="row d-flex justify-content-center">
-      <div class="clearfix col-12 col-md-8">
-        <span class="logo float-left"><a href="index.html"><img class="img-responsive" id="logo" src="../statics/img/pimenta-logo.png" /></a></span>
-        <span class="menu float-right"><img id="botao-menu" class="img-responsive" src="../statics/img/menu-orange.png"  /></span>
+    <header>
+      <div class="row justify-content-center">
+        <div class="clearfix col-12 col-md-8">
+          <span class="logo float-left"><a href="index.html"><img class="img-responsive" id="logo" src="../statics/img/pimenta-logo.png" /></a></span>
+          <span class="menu float-right"><img id="botao-menu" class="img-responsive" src="../statics/img/menu-orange.png" /></span>
+        </div>
       </div>
-      <div id="menu" class="col-sm-6 col-12 conteudo-menu">
-        <div class="row">
-          <h1 id="menu-quem-somos"class="col-12">quem somos</h1>
-          <h1 id="menu-servicos"class="col-12">serviços</h1>
-          <h1 id="menu-contato"class="col-12">contato</h1>
-          <h1 id="menu-casess"class="col-12">cases</h1>
+
+      <div class="conteudo-menu">
+        <div id="menu" class="">
+          <button id="close-menu">X</button>
+          <h1 id="menu-quem-somos" class="">quem somos</h1>
+          <h1 id="menu-servicos" class="">serviços</h1>
+          <h1 id="menu-contato" class="">contato</h1>
+          <a href="file:///C:/Users/monal/Desktop/Site%20Pimenta.co/site/views/cases.html"><h1 id="menu-casess" class="col-12">cases</h1></a>
         </div>
       </div>
     </header>
     <!-- END HEADER -->
 
     <!-- HOME START-->
-    <div class="row video">
-      <video autoplay muted loop id="myVideo" class="Col-12">
-        <source src="../statics/videos/test-video.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
+    <div class="video">
+      <div class="row">
+        <video autoplay muted loop id="myVideo" class="Col-12">
+          <source src="../statics/videos/test-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+      </div>
     </div>
-  </div>
+    </div>
+
   <!-- HOME END-->
   <!-- QUEM SOMOS START-->
-  <div id="quem-somos" class="slide slideUp row">
-    <div class="col-12 col-sm-6 text-right">
-      <h1>Quem é a Pimenta?</h1>
-      <div class="p-content">
+
+  <div id="quem-somos">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1>Quem é a Pimenta?</h1>
         <p>A Pimenta foi fundada em setembro de 2015, com a missão de gerir e operar lojas virtuais com foco nos resultados.</p>
         <p>Nossa ideia central é trabalhar tanto com marcas já estabelecidas e que têm alto potencial de mercado, quanto com modelos de negócio que pretendem aprimorar seus serviços de e-commerce. </p>
       </div>
-    </div>
-    <div class="col-12 col-sm-6">
-      <div class="row">
-        <h2 class="subtitle col-12 text-center">Fundadores</h2>
-        <ul class="col-12 col-sm-4">
-          <li><img class="img-responsive" src="../statics/img/quem-somos-deco.png" /></li>
-          <li>
-            <h3>Deco<br />Nowill</h3></li>
-          <li><a href="mailto:deco@pimentafull.com.br">deco@pimentafull.com.br</a></li>
-        </ul>
-        <ul class="col-12 col-sm-4">
-          <li><img class="img-responsive" src="../statics/img/quem-somos-gu.png" /></li>
-          <li>
-            <h3>Gustavo<br />dos Santos</h3></li>
-          <li><a href="mailto:gustavo@pimentafull.com.br">gustavo@pimentafull.com.br</a></li>
-        </ul>
-        <ul class="col-12 col-sm-4">
-          <li><img class="img-responsive" src="../statics/img/quem-somos-dudi.png" /></li>
-          <li>
-            <h3>Eduardo<br />Barbieri</h3></li>
-          <li><a href="mailto:eduardo@pimentafull.com.br">eduardo@pimentafull.com.br</a></li>
-        </ul>
-        <div class="col-12 text-center">
-          <h2>(11) 3900-1480</h2>
-          <img class="img-responsive" src="../statics/img/quem-somos-line.png" />
+      <div class="col-12 col-md-6">
+        <div class="row">
+          <h2 class="subtitle col-12 text-center">Fundadores</h2>
+          <ul class="col-12 col-sm-4">
+            <li><img class="img-responsive" src="../statics/img/quem-somos-deco.png" /></li>
+            <li>
+              <h3>Deco<br />Nowill</h3></li>
+            <li><a href="mailto:deco@pimentafull.com.br">deco@pimentafull.com.br</a></li>
+          </ul>
+          <ul class="col-12 col-sm-4">
+            <li><img class="img-responsive" src="../statics/img/quem-somos-gu.png" /></li>
+            <li>
+              <h3>Gustavo<br />dos Santos</h3></li>
+            <li><a href="mailto:gustavo@pimentafull.com.br">gustavo@pimentafull.com.br</a></li>
+          </ul>
+          <ul class="col-12 col-sm-4">
+            <li><img class="img-responsive" src="../statics/img/quem-somos-dudi.png" /></li>
+            <li>
+              <h3>Eduardo<br />Barbieri</h3></li>
+            <li><a href="mailto:eduardo@pimentafull.com.br">eduardo@pimentafull.com.br</a></li>
+          </ul>
+          <div class="col-12 text-center">
+            <h2>(11) 3900-1480</h2>
+            <img class="img-responsive" src="../statics/img/quem-somos-line.png" />
+          </div>
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
   </div>
   <!-- QUEM SOMOS END-->
   <!-- SERVIÇOS START-->
-  <div id="servicos" class="row">
-    <div class="col-12 col-sm-6 text-right">
-      <h1>Nossos</h1> <h1>Serviços</h1>
+  <div id="servicos">
+    <div class="row">
+      <div class="col-12 col-sm-6 text-right">
+        <h1>Nossos</h1>
+        <h1>Serviços</h1>
 
-      <div class="p-content">
-        <p>Garantimos 100% do funcionamento do núcleo do e-commerce, com foco em resultados. Ter dentro de casa a expertise do comercio vitual reduz os custos e aumenta a agilidade da operação. O domínio do corebusiness impactada diretamente no fluxo de caixa
-          da loja.</p>
+        <div class="p-content">
+          <p>Garantimos 100% do funcionamento do núcleo do e-commerce, com foco em resultados. Ter dentro de casa a expertise do comercio vitual reduz os custos e aumenta a agilidade da operação. O domínio do corebusiness impactada diretamente no fluxo de
+            caixa da loja.</p>
           <p class="quot">
-            <strong>"</strong>
-            Assim como um sapateiro tem o
+            <strong>"</strong> Assim como um sapateiro tem o
             <br /> &nbsp domínio da fabricação de sapatos,
             <br /> &nbsp a Pimenta tem o domínio das
             <br /> &nbsp ferramentas de vendas online.<strong>"</strong></p>
 
+        </div>
       </div>
+      <div class="col-12 col-sm-6">
+        <img class="col-12" src="../statics/img/teste.jpg" />
       </div>
-    <div class="col-12 col-sm-6">
-      <img class="col-12" src="../statics/img/teste.jpg" />
     </div>
   </div>
-  <!-- SERVIÇOS END-->
-  <!-- CONTATO START-->
-  <div id="contato" class="row">
-    <div class="col-12 col-sm-6 text-right">
-      <h1>Entre em</h1>
-      <h1>Contato</h1>
-      <form>
-        <div>
-          <span><input type="text" placeholder="Nome"></input></span>
-          <span><input type="tel" placeholder="Telefone"></input></span>
+    <!-- SERVIÇOS END-->
+    <!-- CONTATO START-->
+    <div id="contato">
+      <div class="row">
+        <div class="col-12 col-sm-6 text-right">
+          <h1>Entre em</h1>
+          <h1>Contato</h1>
+          <form>
+            <div>
+              <span><input type="text" placeholder="Nome"></input></span>
+              <span><input type="tel" placeholder="Telefone"></input></span>
+            </div>
+            <div>
+              <input type="email" placeholder="E-mail"></input>
+            </div>
+            <div>
+              <textarea placeholder="Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
-        <div>
-          <input type="email" placeholder="E-mail"></input>
+
+        <div class="col-12 col-sm-6">
+          <p> Venha bater um papo conosco.<br /> O café é por nossa conta :) </p>
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d646.4929213136672!2d-46.684548267778744!3d-23.56426873632135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1522863863149" width="400" height="300"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div>
-          <textarea placeholder="Mensagem"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
+      </div>
     </div>
 
-    <div class="col-12 col-sm-6">
-      <p> Venha bater um papo conosco.<br /> O café é por nossa conta :) </p>
-      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d646.4929213136672!2d-46.684548267778744!3d-23.56426873632135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1522863863149" width="400" height="300"
-        frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
   <!-- CONTATO END-->
 
   <!-- FOOTER
@@ -146,66 +160,10 @@
   </div>
 -->
 
-<script type="text/javascript" src="../statics/js/functions.js"></script>
-<script type="text/javascript" src="../statics/js/jquery-3.3.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../statics/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../statics/js/functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-
-$(document).ready(function(){
-  $("#menu-quem-somos").on('click', function(){
-      $("#quem-somos").slideToggle();
-    });
-});
-$(document).ready(function(){
-  $("#menu-servicos").click(function(){
-      $("#servicos").slideToggle()("slow");
-    });
-});
-$(document).ready(function(){
-  $("#menu-contato").click(function(){
-      $("#contato").slideToggle()("slow");
-    });
-});
-
-
-// // MENU COM CANVAS
-// $(document).ready(function(){
-//   $("#botao-menu").click(function(){
-//     var canvas = document.getElementById('myCanvas');
-//     var ctx = canvas.getContext('2d');
-//     var cx = 400;
-//     var cy = 0;
-//     var cr = 5;
-//     var big = 1;
-//
-//     setInterval(function () {
-//
-//         grow();
-//
-//         draw();
-//
-//     }, 3);
-//
-// function grow() {
-//     if (cr<=500){
-//       cr += big
-//     }
-// }
-//
-// function draw() {
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     ctx.beginPath();
-//     ctx.arc(cx, cy, cr, 0, Math.PI * 2);
-//     ctx.fillStyle = "#ff9700";
-//     ctx.fill();
-//     ctx.closePath();
-// }
-//
-//   });
-// });
-
-</script>
 </body>
 
 </html>
