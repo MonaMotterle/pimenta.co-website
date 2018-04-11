@@ -39,16 +39,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-#myVideo{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    margin: 0;
-}
-
 header{
   display: block;
   position: fixed;
@@ -65,7 +55,7 @@ img#logo {
 
 img#botao-menu {
     width: 40px;
-    margin: 35px;
+    margin: 41px 35px 35px;
     cursor: pointer;
 }
 
@@ -80,6 +70,16 @@ button#close-menu {
     font-family: 'ArcaMaj';
     position: absolute;
     display: none;
+}
+
+#myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    margin: 0;
 }
 
 /* #myCanvas {
@@ -127,9 +127,7 @@ button#close-menu {
 #cases-title {
     color: #00d600;
     font-size: 70px;
-    height: 7vh;
     text-align: center;
-    z-index: -1;
 }
 
 .case-page header{
@@ -173,7 +171,7 @@ text-align: center;
   #menu {
       display: block;
       position: absolute;
-      background-color: #ff9700;
+      background-color: #ff5400;
       height: 100vh;
       right: -15px;
       top: 0px;
@@ -219,6 +217,7 @@ text-align: center;
   #quem-somos h1{
     color: #00d600;
     font: 95px;
+    text-align: left;
   }
   #quem-somos h2{
     font-family: 'ArcaMaj', sans-serif;

@@ -1,0 +1,136 @@
+body{
+  overflow-y: scroll;
+}
+
+body h3{
+  margin-top: 8%;
+  color: #565656;
+  text-align: center;
+  font-family: 'ArcaMaj';
+  font-size: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body p {
+    color: #565656;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: normal;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    letter-spacing: -1px;
+}
+
+.line-01a, .line-01b {
+    margin: 85px auto 85px;
+}
+
+.line-03a, .line-03b {
+    margin: 85px auto 85px;
+    /* background-color: #F1F1F1F1; */
+}
+
+img {
+  max-width: 50vw;
+}
+
+header {
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 746px;
+}
+
+footer{
+  margin-top: 40px;
+}
+
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 282px;
+    padding: 0 0 5%;
+    border-radius: 99em;
+
+    box-shadow: -10px 20px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+#resume {
+    font-family: 'ArcaMaj';
+    color: #565656;
+    font-size: 20px;
+    text-align: center;
+    width: 26vw;
+    line-height: 30px;
+    margin: 10% auto 7%;
+    letter-spacing: -1px;
+}
+
+#nxt img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vw;
+    padding: 0 0 10%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.div1line{
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-top: 60px;
+}
+.div2line{
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 60px;
+    margin-bottom: 174px;
+}
+
+.next-link {
+    color: #00D700;
+    width: 20vw;
+    text-align: center;
+    font-family: 'ArcaMaj';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.55rem;
+    padding: 4% 0 0;
+}
+
+footer a:hover{
+  color: #00D700 !important;
+}
+
+.line-01a img:first-child {
+    text-align: center;
+    display: block;
+    margin: 20% auto 10%;
+}
+
+.line-01a img:last-child {
+    width: 40vw;
+    padding-top: 40px;
+}
+
+.notatitle {
+    margin: 2% !important;
+}
+
+#quot {
+    font-size: 18px;
+    width: 20vw;
+    text-align: center;
+    margin: 5% auto;
+}
