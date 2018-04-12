@@ -9,8 +9,6 @@ body h3{
   font-family: 'ArcaMaj';
   font-size: 35px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body p {
@@ -25,15 +23,6 @@ body p {
     letter-spacing: -1px;
 }
 
-.line-01a, .line-01b {
-    margin: 85px auto 85px;
-}
-
-.line-03a, .line-03b {
-    margin: 85px auto 85px;
-    /* background-color: #F1F1F1F1; */
-}
-
 img {
   max-width: 50vw;
 }
@@ -41,14 +30,13 @@ img {
 header {
   display: block;
   position: relative;
-  background-repeat: no-repeat;
+  height: 746px;
   background-size: cover;
   background-position: center;
-  height: 746px;
 }
 
 footer{
-  margin-top: 40px;
+  margin-top: 15%;
 }
 
 footer img {
@@ -58,8 +46,11 @@ footer img {
     width: 282px;
     padding: 0 0 5%;
     border-radius: 99em;
-
     box-shadow: -10px 20px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+.conteiner .row{
+  margin-top: 5%
 }
 
 #resume {
@@ -85,16 +76,17 @@ footer img {
 
 .div1line{
     display: block;
-    position: absolute;
+    position: relative;
+    float: left;
     left: 0;
-    margin-top: 60px;
+    margin: 10% 0;
 }
-.div2line{
+.div2line {
     display: block;
-    position: absolute;
-    right: 0;
-    margin-top: 60px;
-    margin-bottom: 174px;
+    position: relative;
+    float: right;
+    right: -20px;
+    margin: 10% 0;
 }
 
 .next-link {
@@ -133,4 +125,117 @@ footer a:hover{
     width: 20vw;
     text-align: center;
     margin: 5% auto;
+}
+
+@media screen and (max-width: 1000px){
+
+  img#logo {
+    width: 40%;
+    margin: 5px;
+    max-width: 220px;
+    vertical-align: top;
+    position: absolute;
+  }
+  img#botao-menu {
+    width: 5%;
+    margin: 25px;
+    cursor: pointer;
+    vertical-align: top;
+    float: right;
+  }
+
+  .line-01a img:first-child {
+    margin: 15% auto 5%;
+    width: 30vw;
+  }
+  header{
+    width: 105vw;
+    height: 385px;
+  }
+  #resume {
+    width: 100vw;
+    padding: 0 15% 0;
+    }
+
+  .div1line {
+    position: relative;
+    padding-right: 5%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .div2line {
+    position: relative;
+    padding-left: 5%;
+    margin-right: -12px;
+    padding-right:  0;
+  }
+
+  .line-01a img:last-child {
+    width: 100vw;
+    padding-top: 20px;
+  }
+
+  img {
+    max-width: 80vw;
+    display:  block;
+    margin: 0 auto;
+  }
+
+  .line-01a, .line-01b {
+      margin: 5px auto 5px;
+  }
+
+  .line-03a, .line-03b {
+      margin: 5px auto 5px;
+  }
+  body p{
+    width: 75vw;
+    margin: 15px 13vw;
+  }
+
+  body h3{
+    font-size: 24px;
+    margin:  auto 7%;
+  }
+
+  .next-link {
+    width: 100vw;
+  }
+
+  #nxt img {
+    width: 30vw;
+
+    }
+
+  footer img {
+    width: 100%;
+    }
+
+  .mid-icon h3 {
+      margin: 8% auto 8%;
+      width: 100%;
+  }
+
+  #quot {
+    width: 100vw;
+  }
+
+}
+
+@media screen and (max-width: 750px){
+
+    footer img {
+      width: 50%;
+      }
+
+    .line-01a img:first-child {
+      width: 40vw;
+    }
+
+    header {
+        background-size: cover;
+        height: 195px;
+        width: 105vw;
+    }
 }
