@@ -88,6 +88,9 @@ button#close-menu {
     float: right;
 } */
 
+.home-image{
+  width: 100vw;
+}
 .cont-li {
     font-family: 'ArcaMaj';
     font-size: 67px;
