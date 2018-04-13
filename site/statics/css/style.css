@@ -6,7 +6,7 @@
 body p {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    font-weight: 100;
+    font-weight: normal;
     color: gray;
     text-align: justify;
 }
@@ -105,6 +105,7 @@ button#close-menu {
 .quot {
     font-size: 22px;
     text-align: justify;
+    font-weight: 100;
 }
 
 ::-webkit-input-placeholder {
@@ -299,6 +300,7 @@ text-align: center;
   p.quot {
     float: right;
     width: 75% !important;
+    font-weight: 100;
 }
 
   #contato h1 {
@@ -379,6 +381,7 @@ body{
     font-size: 22px;
     text-align: justify;
     float: right !important;
+    font-weight: 100;
   }
 
   form{
@@ -523,6 +526,7 @@ body{
       text-align: justify;
       width: 75vw !important;
       float: left !important;
+      font-weight: 100;
   }
 
   p {

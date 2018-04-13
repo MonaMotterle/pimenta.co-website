@@ -11,6 +11,21 @@ body h3{
   display: block;
 }
 
+body h2 a {
+    color: white;
+    text-align: center;
+    font-family: 'ArcaMaj';
+    font-size: 35px;
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    width: 100vw;
+}
+
+body h2 a:hover{
+  color: white;
+}
+
 body p {
     color: #565656;
     text-align: justify;
@@ -49,6 +64,10 @@ footer img {
     box-shadow: -10px 20px 23px 0px rgba(0, 0, 0, 0.1);
 }
 
+.grayrow{
+  background-color: lightgray;
+}
+
 .conteiner .row{
   margin-top: 5%
 }
@@ -80,12 +99,14 @@ footer img {
     position: relative;
     float: left;
     left: 0;
+    margin: 6% 0;
 }
 .div2line {
     display: block;
     position: relative;
     float: right;
     right: -20px;
+    margin: 6% 0;
 }
 
 .dbl-img{
@@ -99,7 +120,12 @@ footer img {
 }
 
 #nxt>div h3 {
-    margin: 10% auto 1%;
+    margin: -10% auto 1%;
+}
+
+#ww-foot {
+    margin: auto;
+    padding-bottom: 15%;
 }
 
 .next-link {
@@ -132,6 +158,10 @@ footer a:hover{
 
 .notatitle {
     margin: 2% !important;
+}
+
+#darling-image {
+    padding: 10% 0;
 }
 
 #quot {
@@ -188,6 +218,11 @@ footer a:hover{
   .line-01a img:last-child {
     width: 100vw;
     padding-top: 20px;
+  }
+
+  .text-area{
+    min-width: 20vw;
+    vertical-align: middle;
   }
 
   img {

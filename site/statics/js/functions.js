@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#menu-quem-somos").click(function(){
-      $("#menu").css('width', '0');
+      $("#menu").animate({width:'0'});
       $("#close-menu, .cont-li").css('display', 'none');
       if ($(window).width() <= 750) {
         $("#quem-somos").animate({left:'0'});
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#menu-servicos").click(function(){
-      $("#menu").css('width', '0');
+      $("#menu").animate({width:'0'});
       $("#close-menu, .cont-li").css('display', 'none');
       if ($(window).width() <= 750) {
         $("#servicos").animate({left:'0'});
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#menu-contato").click(function(){
-      $("#menu").css('width', '0');
+      $("#menu").animate({width:'0'});
       $("#close-menu, .cont-li").css('display', 'none');
       if ($(window).width() <= 750) {
         $("#contato").animate({left:'0'});
@@ -46,20 +46,26 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#botao-menu").click(function(){
   if ($(window).width() <= 750) {
-      $("#quem-somos, #servicos, #contato").css({left:'100%'});
-      $("#menu").css({width:'100vw', height:'100vh', left:'0'});}
+      $("#quem-somos, #servicos, #contato").animate({left:'100%'});
+      $("#menu").animate({width:'100vw', height:'100vh', left:'0'});}
   else if ($(window).width() <= 1000) {
-      $("#quem-somos, #servicos, #contato").css({top:'100%'});
-      $("#menu").css({width:'100vw', height:'100vh', left:'0'});}
+      $("#quem-somos, #servicos, #contato").animate({top:'100%'});
+      $("#menu").animate({width:'100vw', height:'100vh', left:'0'});}
   else {
-      $("#quem-somos, #servicos, #contato").css({top:'100%'});
-      $("#menu").css({width:'50vw'});}
+      $("#quem-somos, #servicos, #contato").animate({top:'100%'});
+      $("#menu").animate({width:'50vw'});}
     $("#close-menu, .cont-li").css('display', 'block');
     });
 });
 $(document).ready(function(){
   $("#close-menu").click(function(){
-      $("#menu").css('width', '0');
+    if ($(window).width() <= 1000) {
+      $("#menu").animate({left:'100%'});
+    }
+    else {
+      $("#menu").animate({width:'0'});
+    }
+
       $("#close-menu, .cont-li").css('display', 'none');
     });
 });
