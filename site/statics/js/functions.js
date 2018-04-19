@@ -58,21 +58,18 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#botao-menu").click(function(){
   if ($(window).width() <= 750) {
-      $("#quem-somos, #servicos, #contato").animate({left:'100%'});
-      $("#menu").animate({width:'100vw', height:'100vh', left:'0'});}
+      $("#menu").animate({width:'110vw', height:'110vh', left:'0'});}
   else if ($(window).width() <= 1000) {
-      $("#quem-somos, #servicos, #contato").animate({top:'100%'});
-      $("#menu").animate({width:'100vw', height:'100vh', left:'0'});}
+      $("#menu").animate({width:'110vw', height:'110vh', left:'0'});}
   else {
-      $("#quem-somos, #servicos, #contato").animate({top:'100%'});
       $("#menu").animate({width:'50vw'});}
     $("#close-menu, .cont-li").css('display', 'block');
     });
 });
 $(document).ready(function(){
-  $("#close-menu").click(function(){
+  $("#close-menu, .cont-li").click(function(){
     if ($(window).width() <= 1000) {
-      $("#menu").animate({left:'100%'});
+      $("#menu").animate({left:'110%'});
     }
     else {
       $("#menu").animate({width:'0'});
