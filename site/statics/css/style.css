@@ -3,6 +3,10 @@
     src: url("../font/ArcaMajora3-Bold.otf");
 }
 
+body{
+  overflow-x: hidden;
+}
+
 body p {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -42,8 +46,160 @@ a:hover {
 header{
   display: block;
   position: fixed;
-  z-index: 99999;
   width: 100%;
+  background: none;
+  z-index: 99999
+}
+
+body {
+    /* The image used */
+    background-image: url("../img/home_fundo.jpg");
+
+    /* Set a specific height */
+    min-height: 100vw;
+    top: 0%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: block !important;
+    position: absolute;
+    background: white;
+    background-size: cover;
+    top: 347%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.front-home {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    width: 95vw;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: darkgray;
+    text-transform: uppercase;
+}
+
+.front-home a {
+    display: inline-block;
+    position: relative;
+    padding: 3% 4% 0%;
+    font-family: 'ArcaMaj';
+    color: white;
+}
+
+.front-home a:hover {
+    display: inline-block;
+    position: relative;
+    padding: 3% 4% 0%;
+    font-family: 'ArcaMaj';
+    color: #00d600;
+}
+
+.en-ct {
+    display: block !important;
+    position: absolute;
+    top: 207%;
+    width: 100vw;
+    height: auto;
+    left: 0;
+    text-align: center;
+    padding-top: 15%;
+    margin: 5% auto 0;
+    background-image: url('../img/Matiz_Saturação 1.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ex-in {
+    display: block !important;
+    position: absolute;
+    background: white;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    margin: 5% auto 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pepper {
+    display: block;
+    position: relative;
+    opacity: 0.3 !important;
+    margin: 5% auto;
+}
+
+.ex-in p {
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.ex-in h1 {
+    color: #00d600;
+    padding: 5% 0 2%;
+}
+
+.ex-in h3{
+  margin: 4% auto;
+  color: #00d600;
+}
+
+.ex-in ul{
+  list-style: none;
+}
+.equipe ul li p {
+    text-align: center;
+    font-size: 15px;
+    margin: 15px auto;
+    padding: 0;
+    width: auto;
+}
+
+.equipe {
+  margin-left: 10px auto;
+}
+
+.down-seta{
+  margin-top: 25px;
+}
+
+.en-ct h1 {
+    color:  #009ff2;
+}
+
+.en-ct h2 {
+    color:  white;
+}
+
+.en-ct p {
+    text-align: center;
+    width: 30vw;
+    margin: 3% auto;
+    font-size: 17px;
+}
+
+iframe {
+    width: 100vw;
+    left: 0;
+    vertical-align: bottom;
 }
 
 img#logo {
@@ -72,7 +228,8 @@ button#close-menu {
     display: none;
 }
 
-#myVideo{
+
+/* #myVideo{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -80,7 +237,7 @@ button#close-menu {
     min-height: 100%;
     z-index: -1;
     margin: 0;
-}
+} */
 
 /* #myCanvas {
     width: 1000px;
@@ -298,10 +455,10 @@ text-align: center;
       margin: 40px 0;
   }
   p.quot {
-    float: right;
-    width: 75% !important;
-    font-weight: 100;
-}
+      float: right;
+      width: 50% !important;
+      font-weight: 100;
+  }
 
   #contato h1 {
       color: #009ff2;
@@ -316,10 +473,14 @@ text-align: center;
   }
 
   form {
-    float: right;
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+      width: 345px;
+      display: block;
+      position: relative;
+      margin: 5% auto;
+  }
+
+  form > div:first-child{
+    box-shadow: 5px 9px 57px #000;
   }
 
   input {
@@ -327,17 +488,17 @@ text-align: center;
     width: 170px;
     height: 35px;
     padding-left: 10px;
-    box-shadow: 6px 7px 20px #d2d2d2d2;
   }
   input[type="email"] {
     width: 100%;
     margin: 8px 0;
+    box-shadow: 5px 9px 57px #000;
   }
   textarea {
     border: 1px solid #009ff2;
     width: 100%;
     padding-left: 10px;
-    box-shadow: 6px 7px 20px #d2d2d2d2;
+    box-shadow: 5px 9px 57px #000;
   }
 
   button.btn.btn-primary {
@@ -353,9 +514,6 @@ text-align: center;
 }
 
 @media screen and (min-width: 750px){
-body{
-  overflow: hidden;
-}
 #botao-menu{
   float:right
 }
@@ -436,18 +594,9 @@ body{
     line-height: normal;
   }
 
-  iframe {
-    width: 68vw;
-    height: 20vh;
-}
-
 }
 
 @media screen and (max-width: 750px){
-  body {
-    height: 100vh;
-    overflow-x: hidden;
-  }
 
   body h1 {
     padding: 0px 0 20px;
@@ -515,10 +664,6 @@ body{
     margin-bottom: 0;
   }
 
-  iframe {
-    width: 75vw;
-    height: 25vh;
-  }
 
   p.quot {
       padding-bottom: 15px;
