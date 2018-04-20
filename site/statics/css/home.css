@@ -49,17 +49,6 @@ section {
   margin: 0;
 }
 
-section.quem-somos {
-  background-color: white
-}
-
-section.contato {
-  background-image: url('../img/Matiz_Saturação 1.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*
 CONFIGURAÇÕES DE MENU
@@ -185,6 +174,10 @@ section.first-page {
 CONFIGURAÇÕES DE QUEM SOMOS
 */
 
+section.quem-somos {
+  background-color: white
+}
+
 .quem-somos h1 {
   color: #00d600;
 }
@@ -212,10 +205,18 @@ CONFIGURAÇÕES DE QUEM SOMOS
 CONFIGURAÇÕES DE CONTATO
 */
 
+
+section.contato {
+  background-image: url('../img/Matiz_Saturação 1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 iframe {
     width: 100vw;
     vertical-align: bottom;
-    border-bottom: 1px solid lightgray !important;
 }
 
 form {
@@ -302,28 +303,17 @@ button.btn.btn-primary {
 CONFIGURAÇÕES DO FOOTER
 */
 
-footer.container {
-  padding-top: 4%;
-}
-
 footer {
   height: auto;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 4% 0;
+  border-top: 1px solid lightgray;
 }
 
-footer p:first-child {
-  text-align: center;
-}
-
-#address {
-  text-align: left;
-  padding: 0;
-  right: -30px;
-}
-
-footer p:last-child {
-  font-size: 0.7rem
+.last-line p {
+  font-size: 0.7rem;
+  text-align:  center;
+  line-height: 1px;
 }
 
 footer img {
@@ -339,6 +329,11 @@ footer a {
 footer a:hover {
   color: inherit;
 }
+
+footer.container > div div:first-child {
+    padding-left: 10%;
+}
+
 
 @media screen and (max-width:500px) {
   body p {
@@ -399,8 +394,10 @@ footer a:hover {
     margin: 0 auto;
     width: 100%
   }
-  #address {
-    right: 0px;
+  .last-line p {
+    line-height: 15px;
+    width: 200px;
+    padding-top: 20px;
   }
   /*
   CONFIGURAÇÕES DE QUEM SOMOS
