@@ -175,7 +175,8 @@ CONFIGURAÇÕES DE QUEM SOMOS
 */
 
 section.quem-somos {
-  background-color: white
+  background-color: white;
+  min-height: 100vh
 }
 
 .quem-somos h1 {
@@ -187,6 +188,10 @@ section.quem-somos {
   margin: 40px auto 60px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.quem-somos h4{
+  color: #565656;
 }
 
 .equipe p {
@@ -409,10 +414,17 @@ footer.container > div div:first-child {
     font-size: 2rem;
     padding-top: 55px;
   }
+
+  .equipe h4 {
+      margin: 15px auto 0;
+      width: 90%
+  }
+
   .equipe p {
     margin: -5% auto 0;
     font-size: 0.8rem;
   }
+
   /*
   CONFIGURAÇÕES DE CONTATO
   */

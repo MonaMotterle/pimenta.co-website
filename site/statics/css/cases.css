@@ -3,30 +3,29 @@
   src: url("../font/ArcaMajora3-Bold.otf");
 }
 
+
+/* BASIC CONFIG */
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
-body.main-page{
-  background-image: url('../img/cases/fundo1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 body h1, h2, h3, h4 {
     font-family: 'ArcaMaj' !important;
-    color: #565656 !important;
     text-align: center;
-    margin: 10% auto !important;
+    color: #565656 !important;
 }
-
+body h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 5% 0 2%;
+}
+body h3{
+  margin: 15px auto 35px !important;
+}
 body a:hover {
   text-decoration: none;
 }
-
 body p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
@@ -34,31 +33,70 @@ body p {
   color: gray;
   text-align: justify;
   width: 400px;
-  margin: 0 auto 2%;
+  margin: 0 auto 3%;
 }
 
-body ul li {
-  list-style: none
+div.row {
+    height: 100%;
+    min-height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 30px auto 90px;
 }
 
-body h1 {
-  font-size: 5rem;
-  text-align: center;
-  padding: 5% 0 2%;
+#case-logo {
+    display: block;
+    position: relative;
+    margin: 150px auto 75px;
+    text-align: center;
+    width: 300px;
+}
+section.cover img{
+  width: 100vw;
+  height: 100%
+}
+section.resume p{
+  font-family: 'ArcaMaj';
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center
 }
 
-header {
+.div2line{
+  float: right;
+  right: 0;
+  margin-right:-15px;
+  margin-top: 50px;
+  max-width: 580px;
+}
+.div1line{
+  margin-left: -15px;
+  margin-top: 50px;
+  max-width: 580px;
+}
+.line img{
+  width: 100%;
+}
+.resume img{
+  width: 100%;
+}
+
+.mais-cases img{
+  max-width: 83px;
   display: block;
-  position: absolute;
-  z-index: 99999;
-  width: 100vw;
+  margin: 0 auto;
+}
+.mais-cases a{
+  color: #00d600
+}
+.mais-cases a:hover{
+  color: #00d600
 }
 
-section {
-  width: 100vw;
-  height: auto;
-  margin: 0;
-}
 
 /*
 CONFIGURAÇÕES DE MENU
@@ -69,6 +107,7 @@ img#logo {
   max-width: 220px;
   margin: 20px;
   float: left;
+  transform: initial;
 }
 
 img#botao-menu {
@@ -107,7 +146,7 @@ button#close-menu {
 .cont-li {
   font-family: 'ArcaMaj';
   font-size: 67px;
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   text-align: left;
   cursor: pointer;
@@ -116,9 +155,19 @@ button#close-menu {
   text-decoration: none;
 }
 
+header {
+  display: block;
+  position: absolute;
+  z-index: 99999;
+  width: 100vw;
+}
+
 /*
 CONFIGURAÇÕES DO FOOTER
 */
+body ul li {
+  list-style: none
+}
 
 footer {
   height: auto;
@@ -151,12 +200,35 @@ footer.container > div div:first-child {
     padding-left: 10%;
 }
 
+/* CONFIGURAÇÕES ESPECÍFICAS */
+
+/* WW */
+
+.mid-icon img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 100%;
+    box-shadow: 10px 13px 20px lightgrey;
+}
+#quot{
+  text-align: center;
+  font-size: 1rem
+}
+
+/* DARLING */
+.cent-img {
+    max-width: 350px !important;
+    margin: 0 auto;
+    display: block;
+}
 
 @media screen and (max-width:500px) {
-  body p {
-    width: 75%;
-    margin: 30px auto 30px;
-  }
+
+body p{
+  width: 90%
+}
+
   /*
   CONFIGURAÇÕES DO HEADER
   */
@@ -177,105 +249,6 @@ footer.container > div div:first-child {
     float: right;
   }
 
-
-/* GENERAL CASES */
-
-section{
-  margin-bottom: 5%;
-  padding:  0;
-}
-
-.cover img{
-  width: 100%
-}
-
-.row{
-    align-items: center;
-    width: 100vw;
-    }
-
-img.div2line {
-    float: right;
-    margin-right: -35px;
-}
-
-.resume p{
-    font-family: 'ArcaMaj';
-    color: #565656;
-    font-size: 20px;
-    text-align: center;
-    width: 26vw;
-    line-height: 30px;
-    margin: 10% auto 7%;
-    letter-spacing: -1px;
-}
-
-#case-logo{
-  display: block;
-  position: relative;
-  width: 30%;
-  margin: 0 auto;
-}
-
-section.mais-cases{
-  margin: 5% auto;
-}
-
-.mais-cases h3{
-  margin-bottom: 0 !important;
-}
-
-.mais-cases a{
-  color: #00D700;
-}
-.mais-cases a:hover{
-  color: #00D700
-}
-
-.mais-cases img {
-    width: auto;
-    margin: 0 47%;
-}
-
-/* CONFIGURAÇÕES WW */
-.icons img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  padding: 0 0 5%;
-  border-radius: 99em;
-  box-shadow: -10px 20px 23px 0px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width:500px) {
-  body p {
-    width: 75%;
-    margin: 30px auto 30px;
-  }
-
-  div{
-    padding-right: 0;
-  }
-  /*
-  CONFIGURAÇÕES DO HEADER
-  */
-  .cont-li {
-    padding-left: 20px;
-    margin-left: 0;
-  }
-  img#logo {
-    width: 40%;
-    max-width: 220px;
-    margin: 4% auto;
-    float: left;
-  }
-  img#botao-menu {
-    width: 10%;
-    margin: 8% 5%;
-    cursor: pointer;
-    float: right;
-  }
   /*
   CONFIGURAÇÕES DO FOOTER
   */
@@ -294,16 +267,11 @@ section.mais-cases{
     padding-top: 20px;
   }
 
-  /* CONFIGURAÇÕES WW */
-  .icons img{
+
+  /* CONFIGURAÇÕES ESPECÍFICAS */
+
+  /* WW */
+  .mid-icon img {
     width: 50%
-  }
-
-}
-
-@media (min-width: 501px) and (max-width: 1030px){
-  body p {
-    width: 75%;
-    margin: 30px auto 30px;
   }
 }
