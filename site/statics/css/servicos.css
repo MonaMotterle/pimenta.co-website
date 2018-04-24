@@ -1,17 +1,3 @@
-@font-face {
-  font-family: 'ArcaMaj';
-  src: url("../font/ArcaMajora3-Bold.otf");
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-}
-
-body h1, h2, h3, h4 {
-  font-family: 'ArcaMaj' !important;
-}
-
 body a:hover {
   text-decoration: none;
 }
@@ -24,6 +10,15 @@ body p {
   text-align: justify;
   width: 41%;
   margin: 0 auto 2%;
+}
+.down-seta {
+  display: block;
+  position: absolute;
+  margin: 0 50%;
+  bottom: 1%;
+}
+body h2{
+  margin: 18px auto;
 }
 
 body ul li {
@@ -59,98 +54,6 @@ img{
     margin: auto;
 }
 
-/*
-CONFIGURAÇÕES DE MENU
-*/
-
-img#logo {
-  width: 85%;
-  max-width: 220px;
-  margin: 20px;
-  float: left;
-  transform: initial;
-}
-
-img#botao-menu {
-  width: 40px;
-  margin: 41px 35px 35px;
-  cursor: pointer;
-  float: right;
-}
-
-button#close-menu {
-  top: 0;
-  right: 5%;
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  font-family: 'ArcaMaj';
-  position: absolute;
-  display: none;
-}
-
-#menu {
-  display: block;
-  position: absolute;
-  background-color: #ff5400;
-  height: 100vh;
-  right: -15px;
-  top: 0px;
-  padding-top: 150px;
-  width: 0vw;
-  text-align: left;
-  z-index: 99999
-}
-
-.cont-li {
-  font-family: 'ArcaMaj';
-  font-size: 67px;
-  color: white;
-  text-transform: uppercase;
-  text-align: left;
-  cursor: pointer;
-  padding-left: 50px;
-  padding-bottom: 15px;
-  text-decoration: none;
-}
-
-
-/*
-CONFIGURAÇÕES DO FOOTER
-*/
-
-footer {
-  height: auto;
-  margin: 0 auto;
-  padding: 4% 0;
-  border-top: 1px solid lightgray;
-}
-
-.last-line p {
-  font-size: 0.7rem;
-  text-align:  center;
-  line-height: 1px;
-}
-
-footer img {
-  display: block;
-  ;
-  margin: 0 auto;
-}
-
-footer a {
-  color: inherit;
-}
-
-footer a:hover {
-  color: inherit;
-}
-
-footer.container > div div:first-child {
-    padding-left: 10%;
-}
 
 /*
 CONFIGURAÇÕES DO HEAD
@@ -168,13 +71,13 @@ CONFIGURAÇÕES DO HEAD
   color: white;
   font-family: 'ArcaMaj';
   text-align: center;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .cover h1{
   font-size: 5rem;
   width: 775px;
-  margin:  0 auto;
+  margin: 0 auto 110px !important;
   padding-top:  20%;
 }
 
@@ -189,12 +92,6 @@ CONFIGURAÇÕES DO HEAD
 
 .cover a:hover {
   color: #00d600;
-}
-.down-seta {
-  display: block;
-  position: absolute;
-  bottom: 10%;
-  width: 100vw;
 }
 
 /*
@@ -250,7 +147,7 @@ section.odd.line .l-icon{
 
 .resume h2{
     text-align: center;
-    margin: 5% auto;
+    margin: 5% auto !important;
     width: 50%;
     color: #565656
   }
@@ -261,51 +158,13 @@ section.odd.line .l-icon{
     width: 75%;
     margin: 30px auto 30px;
   }
-  /*
-  CONFIGURAÇÕES DO HEADER
-  */
-  .cont-li {
-    padding-left: 20px;
-    margin-left: 0;
-  }
-  img#logo {
-    width: 40%;
-    max-width: 220px;
-    margin: 4% auto;
-    float: left;
-  }
-  img#botao-menu {
-    width: 10%;
-    margin: 8% 5%;
-    cursor: pointer;
-    float: right;
-  }
-
-  /*
-  CONFIGURAÇÕES DO FOOTER
-  */
-  footer ul {
-    text-align: center;
-    padding: 20px 0;
-    line-height: 25px;
-    color: darkgray;
-  }
-  footer img:last-child {
-    width: 100%
-  }
-  .last-line p {
-    line-height: 15px;
-    width: 200px;
-    padding-top: 20px;
-  }
-
 /*
 CONFIGURAÇÕES DE CONTEUDO
 */
-.r-icon{
+.l-icon{
   visibility: visible !important;
 }
-.l-icon{
+.r-icon{
   display: none
 }
 
@@ -314,7 +173,7 @@ h3{
 }
 
 .resume h2{
-    width: 95%;
+    width: 95% !important;
   }
 
 .l-icon, .r-icon {
@@ -329,15 +188,16 @@ p{
 .resume p{
   text-align: justify;
 }
-img{
-  width: 100%
+
+.line img{
+  width: 50% !important
 }
 
-h1 {
-    font-size: 2.4rem !important;
-    width: 100vw !important;
-    margin: 0 auto 45px !important;
-    padding-top: 270px!important;
+.cover h1 {
+  padding-top: 75%;
+  width: 100vw;
+  font-size: 3rem;
+  padding-bottom: 20%;
 }
 
 .down-seta {
@@ -347,7 +207,7 @@ h1 {
 
 }
 
-@media screen and (max-width: 10000px) {
+@media screen and (max-width: 100px) {
   h2 {
     width: 600px !important;
   }
@@ -364,4 +224,5 @@ h1 {
   p {
       width: 90% !important;
   }
+
 }

@@ -1,277 +1,296 @@
-@font-face {
-  font-family: 'ArcaMaj';
-  src: url("../font/ArcaMajora3-Bold.otf");
-}
-
-
 /* BASIC CONFIG */
-body {
-  font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-}
 
 body h1, h2, h3, h4 {
-    font-family: 'ArcaMaj' !important;
-    text-align: center;
-    color: #565656 !important;
+  text-align: center;
+  color: #565656 !important;
 }
+
 body h1 {
   font-size: 5rem;
   text-align: center;
   padding: 5% 0 2%;
 }
-body h3{
-  margin: 15px auto 35px !important;
-}
+
 body a:hover {
   text-decoration: none;
 }
+
 body p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: gray;
-  text-align: justify;
-  width: 400px;
-  margin: 0 auto 3%;
+  width: 41%;
+  margin: 0 auto 2%;
 }
 
 div.row {
-    height: 100%;
-    min-height: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    margin: 30px auto 90px;
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 30px auto 90px;
+}
+.cover {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'ArcaMaj';
+  text-align: center;
+}
+#darling .cover{background-image: url('../img/Case_darling/banner.png');}
+#side .cover{background-image: url('../img/case_side/banner.png');}
+#triya .cover{background-image: url('../img/case_triya/banner.png');}
+#viggo .cover{background-image: url('../img/case_viggo/banner.png');}
+#ww .cover{background-image: url('../img/case_worldwine/banner.png');}
+
+
+.cover h5 {
+  font-size: 30px;
+}
+
+.casemail {
+    display: block;
+    position: absolute;
+    font-family: 'ArcaMaj';
+    text-align: center !important;
+    bottom: 10%;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.cover a{
+  color: white;
+}
+
+.cover a:hover {
+  color: white;
+}
+
+
+.down-seta {
+    display: block;
+    position: relative;
+    margin: 90px auto 0;
+    text-align:  center;
 }
 
 #case-logo {
-    display: block;
-    position: relative;
-    margin: 150px auto 75px;
-    text-align: center;
-    width: 300px;
-}
-section.cover img{
-  width: 100vw;
-  height: 100%
-}
-section.resume p{
-  font-family: 'ArcaMaj';
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center
+  display: block;
+  position: relative;
+  margin: 150px auto 75px;
+  text-align: center;
+  width: 300px;
 }
 
-.div2line{
+section.resume p {
+    font-family: 'ArcaMaj';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #565656;
+    width: 75% !important;
+}
+
+.div2line {
   float: right;
   right: 0;
-  margin-right:-15px;
+  margin-right: -15px;
   margin-top: 50px;
   max-width: 580px;
 }
-.div1line{
+
+.div1line {
   margin-left: -15px;
   margin-top: 50px;
   max-width: 580px;
 }
-.line img{
-  width: 100%;
-}
-.resume img{
+
+.line img {
   width: 100%;
 }
 
-.mais-cases img{
+.resume img {
+  width: 100%;
+}
+
+.mais-cases img {
   max-width: 83px;
   display: block;
   margin: 0 auto;
 }
-.mais-cases a{
+
+.mais-cases a {
   color: #00d600
 }
-.mais-cases a:hover{
+
+.mais-cases a:hover {
   color: #00d600
 }
 
-
-/*
-CONFIGURAÇÕES DE MENU
-*/
-
-img#logo {
-  width: 85%;
-  max-width: 220px;
-  margin: 20px;
-  float: left;
-  transform: initial;
-}
-
-img#botao-menu {
-  width: 40px;
-  margin: 41px 35px 35px;
-  cursor: pointer;
-  float: right;
-}
-
-button#close-menu {
-  top: 0;
-  right: 5%;
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  font-family: 'ArcaMaj';
-  position: absolute;
-  display: none;
-}
-
-#menu {
-  display: block;
-  position: absolute;
-  background-color: #ff5400;
-  height: 100vh;
-  right: -15px;
-  top: 0px;
-  padding-top: 150px;
-  width: 0vw;
-  text-align: left;
-  z-index: 99999
-}
-
-.cont-li {
-  font-family: 'ArcaMaj';
-  font-size: 67px;
-  color: white !important;
-  text-transform: uppercase;
-  text-align: left;
-  cursor: pointer;
-  padding-left: 50px;
-  padding-bottom: 15px;
-  text-decoration: none;
-}
-
-header {
-  display: block;
-  position: absolute;
-  z-index: 99999;
-  width: 100vw;
-}
-
-/*
-CONFIGURAÇÕES DO FOOTER
-*/
-body ul li {
-  list-style: none
-}
-
-footer {
-  height: auto;
-  margin: 0 auto;
-  padding: 4% 0;
-  border-top: 1px solid lightgray;
-}
-
-.last-line p {
-  font-size: 0.7rem;
-  text-align:  center;
-  line-height: 1px;
-}
-
-footer img {
-  display: block;
-  ;
-  margin: 0 auto;
-}
-
-footer a {
-  color: inherit;
-}
-
-footer a:hover {
-  color: inherit;
-}
-
-footer.container > div div:first-child {
-    padding-left: 10%;
-}
-
-/* CONFIGURAÇÕES ESPECÍFICAS */
+/* CONFIGURAÃ‡Ã•ES ESPECÃFICAS */
 
 /* WW */
 
 .mid-icon img {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    border-radius: 100%;
-    box-shadow: 10px 13px 20px lightgrey;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 100%;
+  box-shadow: 10px 13px 20px lightgrey;
 }
-#quot{
+
+#quot {
   text-align: center;
   font-size: 1rem
 }
 
+#ww p {
+  width: 65% !important;
+}
+
 /* DARLING */
+
 .cent-img {
-    max-width: 350px !important;
-    margin: 0 auto;
-    display: block;
+  max-width: 350px !important;
+  margin: 0 auto 20px;
+  display: block;
+  width: 275px !important;
+}
+
+.bigstrong {
+  font-size: 28px;
+}
+
+.notatitle {
+  margin: 0 auto !important
+}
+
+/* TRIYA */
+
+#triya-even-line {
+  margin-left: -110px;
+}
+
+#triya-odd-line {
+  margin-right: -110px;
+}
+
+#triya p {
+  width: 65%;
+}
+
+/* DARLING */
+
+#viggo p {
+  width: 65% !important;
+}
+
+/* SIDE */
+
+#side p {
+  width: 65% !important;
 }
 
 @media screen and (max-width:500px) {
-
-body p{
-  width: 90%
-}
-
-  /*
-  CONFIGURAÇÕES DO HEADER
-  */
-  .cont-li {
-    padding-left: 20px;
-    margin-left: 0;
+  body p, h3 {
+    width: 90vw !important;
+    margin: 50px auto 35px !important;
   }
-  img#logo {
-    width: 40%;
-    max-width: 220px;
-    margin: 4% auto;
-    float: left;
+  #case-logo {
+    width: 50%;
+    margin: 0 auto;
   }
-  img#botao-menu {
-    width: 10%;
-    margin: 8% 5%;
-    cursor: pointer;
-    float: right;
+  .line img {
+    width: 150%;
+    margin: 0 -25%;
+    padding: 0;
   }
-
-  /*
-  CONFIGURAÇÕES DO FOOTER
-  */
-  footer ul {
-    text-align: center;
-    padding: 20px 0;
-    line-height: 25px;
-    color: darkgray;
+  .div2line {
+    width: 100% !important;
+    margin-right: -15px !important;
+    margin-top: 50px !important;
   }
-  footer img:last-child {
-    width: 100%
+  .div1line {
+    width: 100% !important;
+    margin-left: -15px !important;
+    margin-top: 50px !important;
   }
-  .last-line p {
-    line-height: 15px;
-    width: 200px;
-    padding-top: 20px;
-  }
-
-
-  /* CONFIGURAÇÕES ESPECÍFICAS */
-
+  /* CONFIGURAÃ‡Ã•ES ESPECÃFICAS */
   /* WW */
   .mid-icon img {
     width: 50%
+  }
+  #ww p, h3 {
+    width: 90vw !important;
+    margin: 50px auto 35px !important;
+  }
+  /* TRIYA */
+  #triya-even-line {
+    display: none;
+  }
+  #triya p {
+    width: 90vw !important;
+    margin: 0 auto !important;
+  }
+  #triya h3 {
+    margin: 15px auto !important;
+  }
+  #triya .resume p {
+    margin: 40px auto !important;
+  }
+  /* DARLING */
+  .cent-img {
+    width: 70% !important;
+    margin: 0 auto !important;
+  }
+  .bigimg {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #darling p {
+    width: 90vw !important;
+    margin: 0 auto !important;
+  }
+  #darling h3 {
+    margin: 15px auto !important;
+  }
+  #darling .resume p {
+    margin: 40px auto !important;
+  }
+  /* SIDE */
+  #side p {
+    width: 90vw !important;
+    margin: 0 auto !important;
+  }
+  #side h3 {
+    margin: 15px auto !important;
+  }
+  #side .resume p {
+    margin: 40px auto !important;
+  }
+
+  #side .resume img:last-child {
+    width: 150%;
+    margin: 0 -25% 0;
+  }
+
+  /* VIGGO */
+  #viggo p {
+    width: 90vw !important;
+    margin: 0 auto !important;
+  }
+  #viggo h3 {
+    margin: 15px auto !important;
+  }
+  #viggo .resume p {
+    margin: 40px auto !important;
   }
 }
