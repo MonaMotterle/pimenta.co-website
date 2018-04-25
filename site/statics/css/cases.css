@@ -55,6 +55,22 @@ div.row {
   font-size: 30px;
 }
 
+.logo-cover {
+  vertical-align: middle;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+}
+
+.logo-cover img {
+  display: inline-block;
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+
 .casemail {
     display: block;
     position: absolute;
@@ -155,6 +171,11 @@ section.resume p {
   width: 65% !important;
 }
 
+#ww .logo-cover img {
+  width: 400px;
+  margin: 135px 35px 0 0;
+}
+
 /* DARLING */
 
 .cent-img {
@@ -172,6 +193,11 @@ section.resume p {
   margin: 0 auto !important
 }
 
+#darling .logo-cover img {
+    width: 400px;
+    margin: 130px 20px 0 0;
+}
+
 /* TRIYA */
 
 #triya-even-line {
@@ -186,10 +212,20 @@ section.resume p {
   width: 65%;
 }
 
+#triya .logo-cover img {
+    width: 500px;
+    margin: 135px 76px auto auto;
+}
+
 /* DARLING */
 
 #viggo p {
   width: 65% !important;
+}
+
+#viggo .logo-cover img {
+    width: 400px;
+    margin: 135px 76px auto auto;
 }
 
 /* SIDE */
@@ -245,6 +281,9 @@ section.resume p {
     margin-top: -50px !important;
   }
 
+  .logo-cover{
+    display: none
+  }
 
   #darling .cover{background-image: url('../img/Case_darling/bannermob.png');}
   #side .cover{background-image: url('../img/case_side/bannermob.png');}
@@ -254,7 +293,7 @@ section.resume p {
 
 
 
-  /* CONFIGURAÃƒÆ’Ã¢â‚¬Â¡ÃƒÆ’Ã¢â‚¬Â¢ES ESPECÃƒÆ’Ã‚ÂFICAS */
+  /* CONFIG ESPECIFIC */
   /* WW */
   .mid-icon img {
     width: 50%
@@ -263,6 +302,7 @@ section.resume p {
     width: 90vw !important;
     margin: 50px auto 35px !important;
   }
+
   /* TRIYA */
   #triya-even-line {
     display: none;
@@ -277,6 +317,7 @@ section.resume p {
   #triya .resume p {
     margin: 40px auto !important;
   }
+
   /* DARLING */
   .cent-img {
     width: 70% !important;
