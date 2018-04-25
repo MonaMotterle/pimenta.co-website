@@ -7,6 +7,11 @@
 }
 .cases img{
   width: 100%;
+  filter: grayscale(100%);
+}
+
+.cases img:hover{
+  filter: grayscale(0%);
 }
 
 .cases div {
@@ -70,4 +75,21 @@ body a:hover {
     margin: 3% auto;
   }
 
+}
+@media screen and (max-width:1000px) {
+  body h1{
+    font-size: 70px
+
+  }
+  section.title {
+    padding-top: 15%;
+  }
+
+  header {
+    margin: 3% auto;
+  }
+
+  #menu{
+    top: -25% !important;
+  }
 }

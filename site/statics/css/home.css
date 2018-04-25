@@ -31,7 +31,7 @@ section {
 }
 
 /*
-CONFIGURAÇÕES DE FIRST PAGE
+CONFIGURAÃƒâ€¡Ãƒâ€¢ES DE FIRST PAGE
 */
 
 section.first-page {
@@ -95,7 +95,7 @@ section.first-page {
 }
 
 /*
-CONFIGURAÇÕES DE QUEM SOMOS
+CONFIGURAÃƒâ€¡Ãƒâ€¢ES DE QUEM SOMOS
 */
 
 section.quem-somos {
@@ -121,7 +121,7 @@ section.quem-somos {
 .equipe p {
   width: 100%;
   text-align: center;
-  margin: -3% auto;
+  margin: -10% auto 0;
   font-size: 0.8rem;
 }
 
@@ -129,13 +129,15 @@ section.quem-somos {
   text-align: center;
   margin: 0 auto;
 }
-
+.equipe {
+  margin-bottom: 3%;
+}
 /*
-CONFIGURAÇÕES DE CONTATO
+CONFIGURAÃƒâ€¡Ãƒâ€¢ES DE CONTATO
 */
 
 section.contato {
-  background-image: url('../img/home/Matiz_Saturação 1.png');
+  background-image: url('../img/home/bgcontato.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,16 +162,16 @@ iframe {
 }
 
 .contato p {
-  margin: 0 auto 3%;
-  width: 100vw;
+  margin: 0 auto 3% !important;
+  width: 100vw !important;
   text-align: center;
   color: white;
   font-weight: lighter;
-  font-size: 1.7rem;
+  font-size: 18px !important;
 }
 
 /*
-CONFIGURAÇÕES FORM
+CONFIGURAÃƒâ€¡Ãƒâ€¢ES FORM
 */
 
 form {
@@ -238,13 +240,13 @@ button.btn.btn-primary {
     margin: 30px auto 30px;
   }
   /*
-  CONFIGURAÇÕES DO HOME
+  CONFIGURAÃƒâ€¡Ãƒâ€¢ES DO HOME
   */
   section.first-page {
     width: 105%;
   }
   .pepper img {
-    width: 75%;
+    width: 90% !important;
     margin: 15px;
   }
   .first-page h3 {
@@ -260,22 +262,23 @@ button.btn.btn-primary {
     width: 80% !important;
   }
   /*
-  CONFIGURAÇÕES DE QUEM SOMOS
+  CONFIGURAÃƒâ€¡Ãƒâ€¢ES DE QUEM SOMOS
   */
   .quem-somos h1 {
     font-size: 2rem;
     padding-top: 55px;
   }
   .equipe h4 {
-    margin: 15px auto 0;
-    width: 90%
+    margin: 15px auto -30px !important;
+    width: 50%;
+    text-align:  center !important;
   }
   .equipe p {
     margin: -5% auto 0;
     font-size: 0.8rem;
   }
   /*
-  CONFIGURAÇÕES DE CONTATO
+  CONFIGURAÃƒâ€¡Ãƒâ€¢ES DE CONTATO
   */
   section.contato {
     width: 105%;
@@ -287,6 +290,7 @@ button.btn.btn-primary {
     font-size: 2rem;
     font-family: 'ArcaMaj';
     padding: 30px 0;
+    margin: -15px auto !important;
   }
   form {
     width: 250px;
@@ -299,4 +303,17 @@ button.btn.btn-primary {
   textarea {
       margin: 15px auto !important;
     }
+}
+@media screen and (max-width:1000px) {
+  body p {
+      width: 80vw !important;
+  }
+
+  .pepper img {
+    width: 45%;
+  }
+
+  .equipe p {
+    width: 100% !important;
+  }
 }

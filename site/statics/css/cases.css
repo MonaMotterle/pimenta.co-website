@@ -16,7 +16,7 @@ body a:hover {
 }
 
 body p {
-  width: 41%;
+  width: 65%;
   margin: 0 auto 2%;
 }
 
@@ -84,7 +84,7 @@ div.row {
 #case-logo {
   display: block;
   position: relative;
-  margin: 150px auto 75px;
+  margin: 0 auto 50px;
   text-align: center;
   width: 300px;
 }
@@ -134,7 +134,7 @@ section.resume p {
   color: #00d600
 }
 
-/* CONFIGURAÃ‡Ã•ES ESPECÃFICAS */
+/* CONFIGURAÃƒÆ’Ã¢â‚¬Â¡ÃƒÆ’Ã¢â‚¬Â¢ES ESPECÃƒÆ’Ã‚ÂFICAS */
 
 /* WW */
 
@@ -203,9 +203,13 @@ section.resume p {
     width: 90vw !important;
     margin: 50px auto 35px !important;
   }
+
+  .cover h5 {
+    font-size: 18px;
+  }
+
   #case-logo {
-    width: 50%;
-    margin: 0 auto;
+  display:  none;
   }
   .line img {
     width: 150%;
@@ -222,7 +226,35 @@ section.resume p {
     margin-left: -15px !important;
     margin-top: 50px !important;
   }
-  /* CONFIGURAÃ‡Ã•ES ESPECÃFICAS */
+
+  .down-seta {
+      display: none
+  }
+
+  .casemail {
+      bottom: 0px;
+    }
+
+  .cover {
+    width: 100vw;
+    height: 45vh;
+    background-attachment: inherit;
+  }
+
+  .resume {
+    margin-top: -50px !important;
+  }
+
+
+  #darling .cover{background-image: url('../img/Case_darling/bannermob.png');}
+  #side .cover{background-image: url('../img/case_side/bannermob.png');}
+  #triya .cover{background-image: url('../img/case_triya/bannermob.png');}
+  #viggo .cover{background-image: url('../img/case_viggo/bannermob.png');}
+  #ww .cover{background-image: url('../img/case_worldwine/bannermob.png');}
+
+
+
+  /* CONFIGURAÃƒÆ’Ã¢â‚¬Â¡ÃƒÆ’Ã¢â‚¬Â¢ES ESPECÃƒÆ’Ã‚ÂFICAS */
   /* WW */
   .mid-icon img {
     width: 50%

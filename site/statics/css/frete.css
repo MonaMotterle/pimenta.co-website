@@ -1,299 +1,353 @@
- body {
-   font-family: 'Roboto', sans-serif !important;
-   overflow-x: hidden;
-   text-align: justify !important;
-   font-size: 1.5rem
- }
+body {
+  font-family: 'Roboto', sans-serif !important;
+  overflow-x: hidden;
+  text-align: justify !important;
+  font-size: 1.5rem
+}
 
- form {
-   width: 700px;
-   text-align: center;
-   margin: 0 auto;
- }
+form {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
 
- .down-seta {
-   display: block;
-   position: absolute;
-   margin: 0 50%;
-   bottom: 1%;
- }
+.down-seta {
+  display: block;
+  position: absolute;
+  margin: 0 50%;
+  bottom: 1%;
+}
 
- a:hover {
-   text-decoration: none !important;
- }
+a:hover {
+  text-decoration: none !important;
+}
 
- p:last-child {
-   padding-bottom: 30px;
- }
+p:last-child {
+  padding-bottom: 30px;
+}
 
- section.resume {
-   padding: 0px;
- }
+section.resume {
+}
 
- .resume {
-   text-align: center;
-   color: #565656
- }
+.resume {
+  text-align: center;
+  color: #565656
+}
 
- .resume h3 {
-   text-transform: none;
-   padding: 10px;
- }
+.resume h3 {
+  text-transform: none;
+  padding: 10px;
+}
 
- .resume p {
-   margin: 0;
-   font-size: 1.3rem;
- }
+.resume p {
+  margin: 0;
+  font-size: 1.3rem;
+  text-align:  center;
+}
 
- img {
-   display: block;
-   margin: 0 auto;
-   text-align: center;
- }
+img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 
- input, textarea, select {
-   border: 1px solid #f7961e;
-   margin: 1% 0.5% !important;
-   width: 45%;
-   height: 45px;
-   padding-left: 10px;
-   box-shadow: 2px 8px 20px #F2F2F2;
- }
+input, textarea, select {
+  border: 1px solid #f7961e;
+  margin: 1% 0.5% !important;
+  width: 45%;
+  height: 45px;
+  padding-left: 10px;
+  box-shadow: 2px 8px 20px #F2F2F2;
+}
 
- select {
-   width: 60%;
-   color: gray
- }
+select {
+  width: 60%;
+  color: gray
+}
 
- section {
-   margin: 80px auto;
-   padding: 0 200px
- }
+section {
+  margin: 80px auto;
+  padding: 0 200px
+}
 
- textarea {
-   margin-top: 30px !important;
-   width: 100%;
-   height: 150px
- }
+textarea {
+  margin-top: 30px !important;
+  width: 100%;
+  height: 150px
+}
 
- input[type=radio] {
-   border-radius: 0;
-   margin: 0px;
-   width: inherit;
-   height: auto;
-   padding-left: 10px;
-   box-shadow: none;
- }
+input[type=radio] {
+  border-radius: 0;
+  margin: 0px;
+  width: inherit;
+  height: auto;
+  padding-left: 10px;
+  box-shadow: none;
+}
 
- .cor-vet {
-   height: 280px;
- }
+.cor-vet img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
- .cor-vet img {
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
- }
+#vtex-box {
+  border: 3px solid #f7961e;
+  padding: 1% 4%;
+  text-transform: uppercase;
+  color: #f7961e !important;
+  vertical-align: middle;
+  text-align: center;
+}
 
- #vtex-box {
-   border: 3px solid #f7961e;
-   padding: 1% 4%;
-   text-transform: uppercase;
-   color: #f7961e !important;
-   vertical-align: middle;
-   text-align: center;
- }
 
- #pimenta-frete h2, h3, h4 {
-   text-align: center;
-   margin: 50px auto;
-   padding-bottom: 30px;
-   padding-top: 50px;
-   color: #565656 !important;
-   text-transform: uppercase;
- }
+img#vtxlogo {
+    margin:  130px auto 0;
+}
 
- button {
-   display: block;
-   margin: 50px auto !important;
-   text-align: center;
-   background: #f7961e;
-   color: white;
-   text-transform: uppercase !important;
-   border: none;
-   width: 400px;
-   height: 60px;
-   font-weight: bold;
-   font-size: 1.8rem;
-   font-family: 'ArcaMaj' !important;
- }
+img#crrlogo {
+    margin: 97px auto -50px;
+}
 
- button[type=submit] {
-   font-size: 23px;
-   font-weight: bold;
-   border-radius: 20px;
-   height: 45px;
-   width: 175px;
-   border: 0;
-   text-align: center;
-   background: #f7961e;
-   color: white;
-   text-transform: uppercase !important;
- }
+#pimenta-frete h2, h3, h4 {
+  text-align: center;
+  margin: 50px auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  color: #565656 !important;
+  text-transform: uppercase;
+}
 
- .cover {
-   display: block;
-   position: relative;
-   width: 100vw;
-   height: 100vh;
-   background-image: url('../img/frete/header.png');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-   color: white;
-   font-family: 'ArcaMaj';
-   text-align: center;
-   text-transform: uppercase;
-   margin: 0;
- }
+button {
+  display: block;
+  margin: 50px auto !important;
+  text-align: center;
+  background: #f7961e;
+  color: white;
+  text-transform: uppercase !important;
+  border: none;
+  width: 400px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 28px !important;
+  font-family: 'ArcaMaj' !important;
+}
 
- .divisor {
-   margin: 0 !important;
- }
+button[type=submit] {
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 20px;
+  height: 45px;
+  width: 175px;
+  border: 0;
+  text-align: center;
+  background: #f7961e;
+  color: white;
+  text-transform: uppercase !important;
+}
 
- .divright {
-   float: right;
- }
+.cover {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/frete/header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'ArcaMaj';
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
 
- .lst-p {
-   margin-top: 15px !important;
-   text-align: center;
- }
+.divisor {
+  margin: 0 !important;
+}
 
- .first-l p {
-   width: 70%;
-   margin: 0 auto;
- }
+.divright {
+  float: right;
+}
 
- .second-l p {
-   width: 81%;
-   margin: 0 auto 50px;
- }
+.lst-p {
+  margin-top: 15px !important;
+  text-align: center;
+}
 
- .roundimg {
-   border-radius: 50%;
-   box-shadow: -15px 25px 40px lightgrey;
- }
+.first-l p {
+  width: 70%;
+  margin: 0 auto;
+}
 
- /* COSTUM RADIO */
+.second-l p {
+  width: 81%;
+  margin: 0 auto 50px;
+}
 
- .checkbox {
-   display: block;
-   position: relative;
-   padding-left: 35px;
-   margin: 25px auto;
-   cursor: pointer;
-   width: 25%;
-   text-align: left;
-   color: #565656;
-   font-family: 'Roboto';
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
- }
+.roundimg {
+  border-radius: 50%;
+  box-shadow: -15px 25px 40px lightgrey;
+}
 
- .checkbox input {
-   position: absolute;
-   opacity: 0;
-   cursor: pointer;
- }
+/* COSTUM RADIO */
 
- .checkbox label {
-   width: 100%;
-   margin: 25px -10px;
- }
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 25px auto;
+  cursor: pointer;
+  width: 25%;
+  text-align: left;
+  color: #565656;
+  font-family: 'Roboto';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
- .checkmark {
-   position: absolute;
-   top: 0;
-   left: 0;
-   height: 20px;
-   width: 20px;
-   background-color: white;
-   border: 1px solid #f7961e;
-   border-radius: 50%;
- }
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
 
- .checkbox input:checked~.checkmark {
-   background-color: #f7961e;
- }
+.checkbox label {
+  width: 100%;
+  margin: 25px -10px;
+}
 
- .checkmark:after {
-   content: "";
-   position: absolute;
-   display: none;
- }
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 1px solid #f7961e;
+  border-radius: 50%;
+}
 
- .checkbox input:checked~.checkmark:after {
-   display: block;
- }
+.checkbox input:checked~.checkmark {
+  background-color: #f7961e;
+}
 
- .checkbox .checkmark:after {
-   top: 5px;
-   left: 5px;
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
-   background: white;
- }
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
 
- @media screen and (max-width:500px) {
-   .cover {
-     height: 30vh;
-     background-size: contain;
-     background-position: top;
-   }
-   .resume p {
-     width: 80vw !important;
-     margin: 0 auto !important;
-   }
-   .resume h1 {
-     width: 80vw;
-     font-size: 27px;
-   }
-   .resume h3 {
-     width: 80vw;
-     font-size: 20px;
-   }
-   section {
-     margin: 0 auto;
-     padding: 0;
-   }
-   form {
-     width: 100%;
-   }
-   input, textarea, select {
-     width: 90%;
-   }
-   .checkbox {
-     width: 100%;
-   }
-   .checkbox p {
-     width: 100% !important;
-   }
-   button[type=submit] {
-     font-size: 17px;
-     height: 40px;
-     width: 160px;
-     margin: 10px auto 20px !important;
-   }
-   button {
-     width: 260px;
-   }
-   .cor-vet {
-     height: 149px;
-     margin-top: 55px;
-   }
- }
+.checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.checkbox p:last-child {
+    padding:  0;
+    margin-bottom: -15px;
+}
+
+@media screen and (max-width:500px) {
+  .cover {
+    height: 30vh;
+    background-size: contain;
+    background-position: top;
+    background-attachment: inherit;
+  }
+
+  .resume p {
+    width: 80vw !important;
+    margin: 0 auto !important;
+  }
+  .resume h1 {
+    width: 80vw;
+    font-size: 27px;
+  }
+  .resume h3 {
+    width: 80vw;
+    font-size: 20px;
+  }
+  section {
+    margin: 0 auto;
+    padding: 0;
+  }
+  form {
+    width: 100%;
+  }
+  input, textarea, select {
+    width: 90%;
+  }
+  .checkbox {
+    width: 100%;
+    margin-left: 25vw;
+  }
+  .checkbox p {
+    width: 100% !important;
+  }
+  button[type=submit] {
+    font-size: 17px;
+    height: 40px;
+    width: 160px;
+    margin: 10px auto 20px !important;
+  }
+  button {
+    width: 260px;
+    font-size: 20px !important;
+  }
+
+  #vtex-box {
+    width: 90vw !important;
+    margin-left: 10px !important;
+}
+
+.cor-vet img {
+    max-width: 250px;
+    width: 60%;
+    display: block;
+    position: relative;
+    margin: 0 auto -70px;
+}
+#crrlogo{
+  margin-top: 110px;
+}
+
+#vtxlogo{
+  margin-top: 20px
+}
+
+}
+
+@media (min-width:400px) and (max-width:1200px) {
+  section {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #vtex-box {
+    width: 60vw;}
+    img#crrlogo {
+    margin-top:  163px;
+    width:  100%;
+  }
+
+  img#vtxlogo {
+    margin-bottom:  75px;
+    margin-top:  170px;
+    width:  100%;
+  }
+  .resume h1{
+    margin: 50px auto 0 !important;
+  }
+}

@@ -153,7 +153,7 @@ section.odd.line .l-icon{
   }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1000px) {
   body p {
     width: 75%;
     margin: 30px auto 30px;
@@ -187,42 +187,22 @@ p{
 
 .resume p{
   text-align: justify;
+  margin-bottom: 50px !important;
 }
 
 .line img{
   width: 50% !important
 }
-
 .cover h1 {
-  padding-top: 75%;
-  width: 100vw;
-  font-size: 3rem;
-  padding-bottom: 20%;
+  padding-top: 40%;
+  width: 80vw;
+  font-size: 50px;
+  padding-bottom: 5%;
 }
 
 .down-seta {
     margin: 0 auto;
     width: 100vw !important;
 }
-
-}
-
-@media screen and (max-width: 100px) {
-  h2 {
-    width: 600px !important;
-  }
-
-  .resume p {
-      width: 285px;
-      text-align: center;
-  }
-
-  img {
-      width: 100%;
-  }
-
-  p {
-      width: 90% !important;
-  }
 
 }

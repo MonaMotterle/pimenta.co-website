@@ -60,7 +60,7 @@ $(document).ready(function(){
   if ($(window).width() <= 750) {
       $("#menu").animate({width:'110vw', height:'110vh', left:'0'});}
   else if ($(window).width() <= 1000) {
-      $("#menu").animate({width:'110vw', height:'110vh', left:'0'});}
+      $("#menu").animate({width:'102vw', height:'105vh', left:'0'});}
   else {
       $("#menu").animate({width:'50vw'});}
     $("#close-menu, .cont-li").css('display', 'block');
